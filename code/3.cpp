@@ -101,8 +101,13 @@ public:
 };
 int main()
 {
-    book b1[10]; // object of class book
-    tape t1[10]; // object of class tape
+    int n1,n2;
+    cout<<"Enter the number of books : "; cin>>n1;
+    cout<<"Enter the number of tapes : "; cin>>n2;
+    const int bn1 = n1;
+    const int tn2 = n2;
+    book b1[bn1]; // object of class book
+    tape t1[tn2]; // object of class tape
     int ch, b_count = 0, t_count = 0;
     do
     {
